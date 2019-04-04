@@ -1,0 +1,180 @@
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .about_us_image img {
+        width: 500px;
+    }
+
+    .about_us_describe button {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1170px) {
+    .address_informations {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .navbar_images a:nth-child(3),
+    .navbar_images a:nth-child(4) {
+        align-self: flex-end;
+
+    }
+
+    .navbar_images {
+        height: 362px;
+    }
+
+    .menu_icon {
+    	display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+	nav {
+		float: none;
+	}
+
+	.navbar img {
+		float: none;
+	}
+
+    .navbar_images {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .navbar_images a {
+        margin: 10px;
+    }
+
+    .about_us_image img {
+        width: 80%;
+    }
+
+    .about_us_describe button {
+        margin-top: 20px;	
+    }
+
+    .about_us_describe {
+        margin: 0 auto;
+    }
+
+    .services_items .container {
+        flex-wrap: wrap;
+    }
+
+    .about_us_describe p {
+    	text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	
+    .address_informations .social_icons {
+		margin: 70px auto 0;
+	}
+
+	.address_informations > p:nth-child(1) {
+		text-align: justify;
+	}
+
+    .address_informations > p:nth-child(2),
+	.address_informations > p:nth-child(3),
+	.address_informations > p:nth-child(4),
+	.address_informations > p:nth-child(5) {
+		text-align: center;
+	}
+
+    header img {
+        width: 80%;
+    }
+
+    .services_items {
+    	padding-bottom: 150px;
+    }
+
+    .services_item {
+        margin-bottom: 40px;
+    }
+
+    .our_skills_item {
+        margin: 20px 10px 0 10px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .our_skills_item .progress {
+        width: 300px;
+    }
+
+    .our_skills_item {
+        margin: 20px 0 0;
+    }
+
+    .header_image img {
+        width: 80%;
+    }
+
+    .porfolio_item img {
+        width: 80%;
+    }
+
+    .white_block {
+    	height: 25px;
+    }
+
+	.portfolio_categories li {
+		margin-bottom: 20px;
+	}
+
+    .services_items {
+    	padding-bottom: 120px;
+    }
+
+    .about_us {
+    	padding-top: 65px;
+    	padding-bottom: 120px;
+    }
+
+    .about_us_content {
+    	margin-top: 70px;
+    }
+
+    .our_team {
+    	padding-top: 75px;
+    }
+
+    .our_team_arrow {
+    	margin:60px auto;
+    }
+
+    .our_skills {
+    	padding-bottom: 100px;
+    }
+
+    .our_skills_items {
+    	margin-top: 100px;
+    }
+
+    .our_portfolio {
+    	padding-bottom: 95px;
+    }
+
+    .get_in_touch .header_image {
+		margin-bottom: 85px;
+    }
+
+    footer {
+    	padding:100px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+	.our_skills_item .progress {
+        width: 220px;
+    }
+}
