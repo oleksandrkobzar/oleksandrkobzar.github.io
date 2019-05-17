@@ -1,0 +1,57 @@
+@media only screen and (min-width: 768px) {
+    .menu {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .describe {
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    header section {
+        padding-top: 70px;
+    }
+
+    header {
+        padding-bottom: 100px;
+    }
+    
+    .describe {
+        margin-left: 0;
+    }
+
+    .about-us, .results, .our-work-process, .services, .need-a-project, footer {
+        padding: 50px 0;
+    }
+
+    .professional-skills-left {
+        padding: 80px 20px;
+    }
+
+    .testimonials {
+        padding: 80px 0 30px 0;
+    }
+
+    .professional-skills-left .progress {
+        width: 300px;
+    }
+
+    .results .container {
+        justify-content: space-around;
+    }
+
+    .about-me-right {
+        padding:70px 25px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .professional-skills-left .progress {
+        width: 200px;
+    }
+}
