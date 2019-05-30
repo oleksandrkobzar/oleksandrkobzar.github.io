@@ -18,29 +18,41 @@
             <a href="index.html" class="navbar-brand d-flex align-items-center">
                 <img src="images/logo.png" alt="logo">
             </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars navbar-toggler-icon"></i>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="nav navbar-nav mr-autojustify-content-end menu">
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html" class="active">about</a></li>
-                <li><a href="index.html#work">work</a></li>
-                <li><a href="index.html#process">process</a></li>
-                <li><a href="index.html#services">services</a></li>
-                <li><a href="index.html#testimonials">testimonials</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="nav navbar-nav mr-autojustify-content-end menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work">work</a></li>
+                    <li><a href="index.html#process">process</a></li>
+                    <li><a href="index.html#services">services</a></li>
+                    <li><a href="index.html#testimonials">testimonials</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section class="admin-header">
         <div class="container">
             <h1>Admin Panel</h1>
-            <div id="data">
-                <button type="submit" onclick="getData()">Watch data</button>
-            </div>
+            <button class="btn btn-primary" id="show-data" type="submit">Watch data</button>
+            <button class="btn btn-danger" type="submit" id="delete-all" onclick="daleteAll()">Delete all</button>
+            <table class="table table-dark table-data">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Text</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                </tbody>
+            </table>
         </div>
     </section>
     <footer>
@@ -59,7 +71,7 @@
                         <li><a href="#">Project</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="#">Carreer</a></li>
+                        <li><a href="admin.html">Admin</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-2">
@@ -73,11 +85,52 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-message">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" id="user-name" class="form-control border" placeholder="Your Name" pattern="^[a-zA-Z]{1,20}$" title="Podaj poprawnie imie" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="email" id="user-email" class="form-control border" placeholder="Your Email" title="Podaj poprawnie email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="user-title" class="form-control border" placeholder="Your Title" pattern="[a-zA-Z0-9 ]+" title="Podaj poprawny title" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control border" rows="3" id="user-text" placeholder="Your Comment" maxlength="1000" title="Nie więcej 5-1000 symboli" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" id="save-change">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script>
+    getData();
+    </script>
 </body>
 
 </html>

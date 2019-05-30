@@ -11,7 +11,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     header section {
         padding-top: 70px;
@@ -47,6 +47,33 @@
 
     .about-me-right {
         padding:70px 25px;
+    }
+
+    .menu li {
+        padding:5px 0;
+        border-bottom: 1px solid #000000;
+    }
+
+    .menu li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-toggler-icon {
+        padding: 5px 0;
+    }
+
+    .carousel-control-prev {
+        margin-top: 100px;
+    }
+
+    .carousel-control-next {
+        margin-top: 100px;
+    }
+
+    .result-item {
+        margin: auto;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
 }
 

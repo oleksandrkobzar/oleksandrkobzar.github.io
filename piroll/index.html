@@ -15,25 +15,24 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md fixed-top">
-		  	<a href="index.html" class="navbar-brand d-flex align-items-center">
-           		<img src="images/logo.png" alt="logo">
-        	</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-		    <i class="fa fa-bars navbar-toggler-icon"></i>
-		  </button>
-
-		  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-		  	<ul class="nav navbar-nav mr-autojustify-content-end menu">
-                <li><a href="index.html" class="active">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="index.html#work">work</a></li>
-                <li><a href="index.html#process">process</a></li>
-                <li><a href="index.html#services">services</a></li>
-                <li><a href="index.html#testimonials">testimonials</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-		  </div>
-		</nav>
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="nav navbar-nav mr-autojustify-content-end menu">
+                    <li><a href="index.html" class="active">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work">work</a></li>
+                    <li><a href="index.html#process">process</a></li>
+                    <li><a href="index.html#services">services</a></li>
+                    <li><a href="index.html#testimonials">testimonials</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </nav>
         <section>
             <div class="container">
                 <div class="describe">
@@ -193,22 +192,22 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        	<p>“Outstanding job and exceeded all expectations. It was a pleasure
-				                to work with them on a sizable first project and am looking
-				                forward to start the next one asap.”</p>
-				            <p class="name-author">Michael Hopkins</p>
+                            <p>“Outstanding job and exceeded all expectations. It was a pleasure
+                                to work with them on a sizable first project and am looking
+                                forward to start the next one asap.”</p>
+                            <p class="name-author">Michael Hopkins</p>
                         </div>
                         <div class="carousel-item">
                             <p>“Outstanding job and exceeded all expectations. It was a pleasure
-				                to work with them on a sizable first project and am looking
-				                forward to start the next one asap.”</p>
-				            <p class="name-author">Michael Hopkins</p>
+                                to work with them on a sizable first project and am looking
+                                forward to start the next one asap.”</p>
+                            <p class="name-author">Michael Hopkins</p>
                         </div>
                         <div class="carousel-item">
                             <p>“Outstanding job and exceeded all expectations. It was a pleasure
-				                to work with them on a sizable first project and am looking
-				                forward to start the next one asap.”</p>
-				            <p class="name-author">Michael Hopkins</p>
+                                to work with them on a sizable first project and am looking
+                                forward to start the next one asap.”</p>
+                            <p class="name-author">Michael Hopkins</p>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -232,7 +231,7 @@
             <img src="images/handmade.jpg" alt="handmade">
         </div>
     </section>
-    <section class="need-a-project">
+    <section class="need-a-project" id="need-a-project">
         <div class="container">
             <h1>Need a Project?</h1>
             <p>Let us know what you're looking for in an agency. We'll take a look and see
@@ -241,51 +240,20 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <input 
-                            value="sasha" 
-                            type="text"
-                            id="user-name"
-                            class="form-control" 
-                            placeholder="Your Name"
-                            pattern="^[a-zA-Z]{1,20}$"
-        					title="Podaj poprawnie imie"
-                            required>
+                            <input type="text" id="user-name" class="form-control" placeholder="Your Name" pattern="^[a-zA-Z]{1,20}$" title="Podaj poprawnie imie" required>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <input 
-                            value="sasha@vsdv" 
-                            type="email" 
-                            id="user-email"
-                            class="form-control" 
-                            placeholder="Your Email" 
-        					title="Podaj poprawnie email"
-                            required>
+                            <input type="email" id="user-email" class="form-control" placeholder="Your Email" title="Podaj poprawnie email" required>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input 
-                    value="title sdvsvdv" 
-                    type="text"
-                    id="user-title"
-                    class="form-control" 
-                    placeholder="Your Title" 
-                    pattern="[a-zA-Z0-9 ]+"
-        			title="Podaj poprawny title"
-                    required>
+                    <input type="text" id="user-title" class="form-control" placeholder="Your Title" pattern="[a-zA-Z0-9 ]+" title="Podaj poprawny title" required>
                 </div>
                 <div class="form-group">
-                    <textarea 
-                    class="form-control" 
-                    rows="3" 
-                    id="user-text"
-                    placeholder="Your Comment" 
-                    maxlength = "1000"
-        			title="Nie więcej 5-1000 symboli"
-                    required>sasha sa  sdds vsd vsd vsd v sdv sdv sdv dsv sdv </textarea>
+                    <textarea class="form-control" rows="3" id="user-text" placeholder="Your Comment" maxlength="1000" title="Nie więcej 5-1000 symboli" required></textarea>
                 </div>
                 <button type="submit" onclick="setData()">send message</button>
             </form>
